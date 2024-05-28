@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAMPLE CAFETERIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="zaid.css">
+</head>
+<body>
+<div class="header">
+  <div class="logo">CAFETERIA</div>
+  <div class="menu">
+    <nav>
+        <ul class="sidebar">
+            <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="active">Homepage</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+      <ul class="topbar">
+        <li class="hideOnMobile"><a href="#" class="active">Homepage</a></li>
+        <li class="hideOnMobile"><a href="#">Menu</a></li>
+        <li class="hideOnMobile"><a href="#">About us</a></li>
+        <li class="hideOnMobile"><a href="#">Contact us</a></li>
+
+        <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="banner"> 
+    <h1>Coffee is a language in itself</h1>
+    <a href="index.html" class="banner-link">MENU</a>
+  </div>
+</div>
+<nav>
+ 
+</nav>
+
+<section class="menu" id="menu">
+    <div class="container">
+      <div class="heading">
+        <h2>OUR MENU</h2>
+      </div>
+      <ul class="filters_menu">
+        <li data-filter="*">All</li>
+        <li data-filter=".Veg">Veg</li>
+        <li data-filter=".NonVeg">Non-Veg</li>
+        <li data-filter=".Beverages">Beverages</li>
+        <li data-filter=".bakery">Bakery</li>
+      </ul>
+      <div class="box-container">
+        <div class="box Veg">
+          <img src="images/coffee.jpg" alt="Coffee">
+          <h3>Coffee</h3>
+          <div class="Price">₹80</div>
+          <a href="#" class="btn orderbtn">Order</a>
+        </div>
+        <div class="box NonVeg">
+          <img src="images/cupcake2.jpg" alt="Cupcake">
+          <h3>Cupcake</h3>
+          <div class="Price">₹150</div>
+          <a href="#" class="btn orderbtn">Order</a>
+        </div>
+        <!-- More menu items with different classifications -->
+     
+    
+ 
+  
+      <div class="box">
+        <img src="images/pasta.jpg"alt="">
+        <h3>Pasta</h3>
+        <div class="Price">₹150</div>
+        <a href="#" class="btn orderbtn">Order</a>
+    </div>
+
+        <div class="box">
+          <img src="images/apple.jpg"alt="">
+          <h3>Apple juice</h3>
+          <div class="Price">₹150</div>
+          <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images/lavacake1.jpg"alt="">
+        <h3>Cake</h3>
+        <div class="Price">₹150</div>
+        <a href="#" class="btn orderbtn">Order</a>
+    </div>
+
+    <div class="box">
+      <img src="images/shawarma.jpg"alt="">
+      <h3>Shawarma</h3>
+      <div class="Price">₹150</div>
+      <a href="#" class="btn orderbtn">Order</a>
+  </div>
+
+      <div class="box">
+        <img src="images/berry.jpg"alt="">
+        <h3>Berry</h3>
+        <div class="Price">₹200</div>
+        <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images/burger.jpg"alt="">
+        <h3>Burger</h3>
+        <div class="Price">₹200</div>
+        <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images/dosa.jpg"alt="">
+        <h3>Dosa</h3>
+        <div class="Price">₹200</div>
+        <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images\chikku.jpg"alt="">
+        <h3>Chikku</h3>
+        <div class="Price">₹120</div>
+        <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images/vegpulav.jpg"alt="">
+        <h3>Vegpulav</h3>
+        <div class="Price">₹200</div>
+        <a href="#" class="btn orderbtn">Order</a>
+      </div>
+
+      <div class="box">
+        <img src="images\mango.jpg"alt="">
+        <h3>Mango</h3>
+        <div class="Price">₹180</div>
+        <a href="#" class="btn  orderbtn">Order</a>
+    </div>
+      <!-- More boxes as needed -->
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h1 class="heading">ABOUT US</h1>
+  <div class="row">
+    <div class="image">
+      <img src="images/about.jpg" alt="About Us">
+    </div>
+    <div class="content">
+      <p>Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your personal history, your province, your region, your tribe, your grandma. It's inseparable from those from the get-go.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <div class="links">
+      <span><a href="#" style="color:gray;">HOME</a> | </span>
+      <span><a href="#" style="color:gray;">MENU</a> | </span>
+      <span><a href="#" style="color:gray;">STORE</a> | </span>
+      <span><a href="#" style="color:gray;">LOCATIONS</a></span>
+    </div>
+    <div> 
+      <p class="h2" style="color: rgb(255, 255, 255);">Cafeteria</p>
+      <p class="h6"><em>Delicious Food.</em></p>
+    </div>
+  </div>
+  <div class="contact-links">
+    <a href="https://twitter.com/oxesasa" target="_blank" class="btn text-white contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="https://instagram.com/samara.srd" target="_blank" class="btn text-white contact-details"><i class="fa-brands fa-instagram"></i> Cafeteria</a>
+    <a href="mailto:sdfadigas@gmail.com" class="btn text-white contact-details"><i class="fas fa-at"></i> Cafeteria</a>
+    <a href="https://wa.me/5548991077107" class="btn text-white contact-details"><i class="fa-brands fa-whatsapp"></i> Cafeteria</a>
+  </div>
+  <div class="footer-base">
+    <h3>since@1990</h3>
+  </div>
+</footer>
+
+<script>
+  function showSidebar() {
+    document.querySelector('.sidebar').style.display = 'flex';
+  }
+
+  function closeSidebar() {
+    document.querySelector('.sidebar').style.display = 'none';
+  }
+
+  function filterSelection(filter) {
+  var boxes = document.getElementsByClassName("box");
+  
+  if (filter == "*") {
+    for (var i = 0; i < boxes.length; i++) {
+      boxes[i].style.display = "block";
+    }
+  } else {
+    for (var i = 0; i < boxes.length; i++) {
+      if (boxes[i].classList.contains(filter)) {
+        boxes[i].style.display = "block";
+      } else {
+        boxes[i].style.display = "none";
+      }
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var filters = document.querySelectorAll(".filters_menu li");
+  
+  filters.forEach(function(filter) {
+    filter.addEventListener("click", function() {
+      var selectedFilter = this.getAttribute("data-filter");
+      filterSelection(selectedFilter);
+    });
+  });
+});
+
+</script>
+</body>
+</html>

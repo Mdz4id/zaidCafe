@@ -1,0 +1,295 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .menu nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .topbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topbar li {
+    margin: 0 15px;
+  }
+  
+  .topbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .topbar a.active {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .banner {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-link {
+    color: rgba(255, 255, 255, 0.74);
+    text-decoration: none;
+    background-color: #555;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    z-index: 999;
+    background-color: rgba(247, 247, 247, 0.114);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+  }
+  
+  .sidebar a.active {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .menu {
+    padding: 50px 0;
+  }
+  
+  .menu .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .filters_menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters_menu li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .filters_menu li:hover {
+    color: #555;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .box .Price {
+    margin: 10px 0;
+    color: #888;
+  }
+  
+  .box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about .heading {
+    margin-bottom: 30px;
+  }
+  
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about .image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .about .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .about .content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .about .content p {
+    margin-bottom: 20px;
+  }
+  
+  .about .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer .contact-section-header {
+    margin-bottom: 20px;
+  }
+  
+  footer .contact-links {
+    margin-bottom: 20px;
+  }
+  
+  footer .contact-links a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  footer .footer-base {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 800px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .banner h1 {
+      font-size: 28px;
+    }
+  
+    .banner-link {
+      padding: 8px 16px;
+    }
+  
+    .menu {
+      padding: 30px 0;
+    }
+  
+    .filters_menu {
+      flex-direction: column;
+    }
+  
+    .filters_menu li {
+      margin: 10px 0;
+    }
+  
+    .box-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .about .row {
+      flex-direction: column;
+    }
+  
+    .about .image,
+    .about .content {
+      width: 100%;
+      padding: 0;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+  }
+  
